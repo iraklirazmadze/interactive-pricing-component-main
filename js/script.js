@@ -27,7 +27,12 @@ if(selectValue < 10000){
 if(checkboxClicks == 1){
 cost.innerHTML = cost.innerHTML * 12 *0.75;
 }
+percentage = (select.value - select.min) / (select.max - select.min) * 100;
+select.style.setProperty('--percentage', percentage + '%');
 })
+
+let percentage = (select.value - select.min) / (select.max - select.min) * 100;
+select.style.setProperty('--percentage', percentage + '%');
 
 checkbox.addEventListener('click', () => {
 if(checkboxClicks == 0){
@@ -42,4 +47,13 @@ if(checkboxClicks == 0){
   monthOrYear.innerHTML = 'month';
 }
 })
+document.querySelector(".select").style.setProperty('--hoverColor', "rgba(122, 234, 223, 1)");
 
+select.addEventListener("mousedown", () => {
+  document.querySelector(".select").style.setProperty('--hoverColor', "rgba(36, 174, 161, 1)");
+})
+select.addEventListener("mouseup", () => {
+  document.querySelector(".select").style.setProperty('--hoverColor', "rgba(122, 234, 223, 1)")
+  })
+
+  
