@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+</head>
+<body>
+  <header >
+    <img src="./images/pattern-circles.svg" alt="">
+    <h1>Simple, traffic-based pricing</h1> 
+    <p>Sign-up for our 30-day trial. 
+      No credit card required. </p>
+  </header>
+  <section class="main-section">
+    <div class="main-section-div">
+    <h2 id="mobile-version"><span class="views">100</span>K PAGEVIEWS</h2>
+    <input type="range" class="select" name="select" min="0" max="1000000" value="100000">
+    <div class="views-cost">
+    <h2 id="desktop-version"><span class="views">100</span>K PAGEVIEWS</h2>
+    <p class="cost"><span class="dollar">$</span><span class="amount"></span>/<span class="month-or-year">month</span></p>
+    </div></div>
+    <div class="month-year">
+      <span class="billing">Monthly Billing</span>
+      <label class="switch">
+        <input class="checkbox" type="checkbox">
+        <span class="slider round"></span>
+      </label>
+      <span class="billing">Yearly Billing</span>
+      <span class ='discount'>25% <span class="dscnt"> discount</span>
+      </span>
+      
+    </div>
+    <footer>
+      <div class="footer-content">
+        <p ><img src="./images/icon-check.svg" alt="">Unlimited websites</p>
+        <p ><img src="./images/icon-check.svg" alt="">100% data ownership </p>
+        <p ><img src="./images/icon-check.svg" alt="">Email reports</p>
+      </div>
+      <button>Start my trial</button>
+    </footer>
+  </section>
+  <script src="./js/script.js"></script>
+  
+</body>
+</html>
